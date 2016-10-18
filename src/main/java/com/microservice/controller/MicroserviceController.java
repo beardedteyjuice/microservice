@@ -14,5 +14,12 @@ public class MicroserviceController {
 	public String testController() {
 		return "Hello World !! The controller is working fine.";
 	}
+	
+	@RequestMapping(path = "/getName", 
+			method = RequestMethod.GET, 
+			produces = MediaType.APPLICATION_JSON_VALUE)
+	public String printName() {
+		return "Heleeu Tejas!";
+	}
 
 }
